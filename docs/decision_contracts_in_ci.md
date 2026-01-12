@@ -78,6 +78,7 @@ approvals_required:
   - role: "steward"
   - role: "security"
 expires_at: "2024-12-31"
+```
 
 Design notes:
 Owner is a human role, not a system.
