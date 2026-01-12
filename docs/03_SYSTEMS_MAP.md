@@ -32,6 +32,7 @@ governance → responsibility over time,
 ADL → admissibility before action.
 
 ## Diagram 2 — Control plane vs execution plane
+
 ```mermaid
 flowchart TB
   subgraph Execution["Execution plane (can be stochastic)"]
@@ -53,7 +54,8 @@ Autonomy belongs in execution.
 Responsibility belongs in the control plane.
 
 ## Diagram 3 — Repository responsibility split
-mermaid``` 
+
+```mermaid
 flowchart LR
   subgraph Repo1["Crypto Signals Ensemble"]
     R1a["Signal extraction"]
@@ -76,15 +78,12 @@ flowchart LR
   Repo1 --> Repo2 --> Repo3
 
 ```
-
 Interpretation:
 Signals inform change.
 Change requires evidence.
 Decisions require admissibility.
 
 Why this matters
-
 Most agentic failures are not model failures.
 They are organizational memory failures.
-
 This map makes responsibility explicit, inspectable, and enforceable.
