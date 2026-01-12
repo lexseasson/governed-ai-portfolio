@@ -50,6 +50,23 @@ Decision contracts and commit-time admissibility (**Decision ≠ Log**).
 https://github.com/lexseasson/agentic-decision-ledger
 
 ---
+## Systems map (high-level)
+
+```mermaid
+flowchart LR
+  A["Crypto Signals Ensemble<br/>Signal + Risk Metrics + Reproducibility"]
+  B["DevTracker Governance<br/>Evidence Boundary + Audit Artifacts"]
+  C["Agentic Decision Ledger (ADL)<br/>Decision Contracts + Commit-time Admissibility"]
+
+  A --> B
+  B --> C
+
+  subgraph Pressures["Production pressures"]
+    P1["Uncertainty & cost of error"] --> A
+    P2["Change velocity & organizational amnesia"] --> B
+    P3["Auditability, turnover, drift"] --> C
+  end
+```
 
 ## The hook (what breaks in real organizations)
 
