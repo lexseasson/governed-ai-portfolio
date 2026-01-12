@@ -96,7 +96,7 @@ If a change requires a decision and no valid contract exists, the merge is block
 This gate runs at commit/PR time.
 Runtime can remain stochastic; governance cannot.
 
-```mermaid 
+```
 Fail-closed vs fail-open (explicit trade-off):
 
 | Context            | Strategy         | Rationale                                         |
@@ -258,7 +258,6 @@ In a GitHub Actions workflow, you run the same command on pull requests
 
 python -m pip install pyyaml
 python ci\check_admissibility.py decisions\contracts\example_decision.yml
-
 
 If the script exits non-zero, the PR is blocked.
 
