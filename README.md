@@ -107,6 +107,8 @@ Start here:
 If you only click one thing:  
 **Open `docs/08_EVIDENCE_PACK.md` and follow the pointers to real artifacts.**
 
+- Decision contracts enforced in CI (demo) → `docs/decision_contracts_in_ci.md`
+
 ---
 
 ## Role fit (explicit)
