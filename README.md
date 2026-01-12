@@ -53,3 +53,33 @@ flowchart LR
     P2[Change velocity & organizational amnesia] --> B
     P3[Auditability, turnover, drift] --> C
   end
+
+---
+
+## The hook (what breaks in real orgs)
+Agentic systems fail when:
+- change ships without admissibility,
+- automation overwrites meaning (semantics),
+- evidence is missing when incidents happen,
+- responsibility is ambiguous (“who approved this?”).
+
+> **Thesis:** Governance is not bureaucracy — it is admission control for change.
+
+---
+
+## How to evaluate (fast)
+Start here:
+1) `docs/01_HIRING_MANAGER_TLDR.md` (90 seconds)
+2) `docs/02_15MIN_EVAL_PLAYBOOK.md` (exact route)
+3) `docs/08_EVIDENCE_PACK.md` (clickable proof)
+
+---
+
+## Role fit (explicit)
+- AI Governance Architect
+- Responsible AI Architect
+- AI Risk Management / Model Risk AI
+- LLM / Agentic Systems Architect
+- Staff/Principal Platform Engineer (AI control-plane)
+
+See: `docs/03_SYSTEMS_MAP.md` and `docs/04_ARCHITECTURE_AND_INNOVATION.md`
