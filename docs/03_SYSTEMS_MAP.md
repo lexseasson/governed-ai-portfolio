@@ -22,7 +22,7 @@ flowchart LR
   ML --> CS
   CS --> DT
   DT --> ADL
-end```
+```
 Interpretation:
 Each step introduces a new constraint:
 economics → incentives,
@@ -32,6 +32,7 @@ governance → responsibility over time,
 ADL → admissibility before action.
 
 ## Diagram 2 — Control plane vs execution plane
+```mermaid
 flowchart TB
   subgraph Execution["Execution plane (can be stochastic)"]
     X1["Agents / Pipelines / Models"]
@@ -46,12 +47,13 @@ flowchart TB
   X1 --> C3
   C2 --> C1
   C1 --> X1
-end 
+```
 Key point:
 Autonomy belongs in execution.
 Responsibility belongs in the control plane.
 
 ## Diagram 3 — Repository responsibility split
+mermaid``` 
 flowchart LR
   subgraph Repo1["Crypto Signals Ensemble"]
     R1a["Signal extraction"]
@@ -73,6 +75,7 @@ flowchart LR
 
   Repo1 --> Repo2 --> Repo3
 
+```
 
 Interpretation:
 Signals inform change.
