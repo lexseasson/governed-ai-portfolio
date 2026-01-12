@@ -13,14 +13,20 @@ It is a map of **responsibility escalation**, not feature accumulation.
 
 ```mermaid
 flowchart LR
-  Econ["Economics + Risk + Econometrics"] --> ML["Applied ML"]
-  ML --> CS["Crypto Signals Ensemble"]
-  CS --> DT["DevTracker Governance"]
-  DT --> ADL["Agentic Decision Ledger (ADL)"]
+  flowchart LR
+  Econ["Economics + Risk + Econometrics"]
+  ML["Applied ML"]
+  CS["Crypto Signals Ensemble"]
+  DT["DevTracker Governance"]
+  ADL["Agentic Decision Ledger (ADL)"]
 
-  classDef repo fill:#111,stroke:#999,color:#fff;
-  class CS,DT,ADL repo;
+  Econ --> ML
+  ML --> CS
+  CS --> DT
+  DT --> ADL  
+  end```
 
+```mermaid
 flowchart TB
   subgraph Execution["Execution plane (can be stochastic)"]
     X1["Agents / Pipelines / Models"]
@@ -35,7 +41,9 @@ flowchart TB
   X1 --> C3
   C2 --> C1
   C1 --> X1
+  end```
 
+```mermaid
 flowchart LR
   subgraph Repo1["Crypto Signals Ensemble"]
     R1a["Signal extraction"]
@@ -57,3 +65,4 @@ flowchart LR
 
   Repo1 --> Repo2 --> Repo3
 
+  end```
