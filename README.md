@@ -13,7 +13,7 @@
 **This portfolio is:**
 - A landing page for Staff / Principal / Architect hiring loops.
 - A set of **falsifiable claims** backed by inspectable artifacts.
-- A fast path to evaluate real-world governance thinking.
+- A fast path to evaluate real-world governance and model-risk thinking.
 
 **This portfolio is not:**
 - a SaaS pitch,
@@ -35,112 +35,91 @@ Why this matters:
 - Crypto decision systems impose real cost of error and reproducibility discipline.
 - Governance emerges naturally when scale, turnover, and time enter the system.
 
-The three anchor repositories:
-1) **Crypto Signals Ensemble** — signal extraction and risk under uncertainty  
-2) **DevTracker Governance** — governance as admission control for change; evidence boundary  
-3) **Agentic Decision Ledger (ADL)** — decision contracts and commit-time admissibility (**Decision ≠ Log**)
+### Anchor repositories
 
-Repositories:
-- Crypto Signals Ensemble  
-  https://github.com/lexseasson/crypto_signals_ensemble
-- DevTracker Governance  
-  https://github.com/lexseasson/devtracker-governance
-- Agentic Decision Ledger (ADL)  
-  https://github.com/lexseasson/agentic-decision-ledger
+1) **Crypto Signals Ensemble**  
+Signal extraction, uncertainty management, and risk metrics under real cost of error.  
+https://github.com/lexseasson/crypto_signals_ensemble
+
+2) **DevTracker Governance**  
+Governance as admission control for change; evidence boundary and audit artifacts.  
+https://github.com/lexseasson/devtracker-governance
+
+3) **Agentic Decision Ledger (ADL)**  
+Decision contracts and commit-time admissibility (**Decision ≠ Log**).  
+https://github.com/lexseasson/agentic-decision-ledger
 
 ---
 
-## Systems map (high-level)
-
-```mermaid
-flowchart LR
-  A["Crypto Signals Ensemble<br/>Signal + Risk Metrics + Reproducibility"]
-  B["DevTracker Governance<br/>Evidence Boundary + Audit Artifacts"]
-  C["Agentic Decision Ledger (ADL)<br/>Decision Contracts + Commit-time Admissibility"]
-
-  A --> B
-  B --> C
-
-  subgraph Pressures["Production pressures"]
-    P1["Uncertainty & cost of error"] --> A
-    P2["Change velocity & organizational amnesia"] --> B
-    P3["Auditability, turnover, drift"] --> C
-  end
-
-The hook (what breaks in real orgs)
+## The hook (what breaks in real organizations)
 
 Agentic systems fail when:
+- change ships without admissibility,
+- automation overwrites meaning (semantics),
+- evidence is missing when incidents happen,
+- responsibility is ambiguous (“who approved this?”).
 
-change ships without admissibility,
+> **Thesis:** Governance is not bureaucracy — it is admission control for change.
 
-automation overwrites meaning (semantics),
+---
 
-evidence is missing when incidents happen,
-
-responsibility is ambiguous (“who approved this?”).
-
-Thesis: Governance is not bureaucracy — it is admission control for change.
-
-What is actually “senior” here (signals that matter)
+## What is actually senior here (signals that matter)
 
 This portfolio is optimized for concerns that appear in Staff / Principal / Architect loops:
 
-Boundaries: who owns semantics vs who writes evidence.
-
-Failure modes: post-incident defensibility, drift, turnover survivability.
-
-Trade-offs: commit-time friction to reduce forensic cost later.
-
-Non-goals: refusal to ship “magic autonomy” without controls.
-
-Integration realism: CI gates and artifact retention as part of delivery.
+- **Boundaries:** who owns semantics vs who writes evidence.
+- **Failure modes:** post-incident defensibility, drift, turnover survivability.
+- **Trade-offs:** commit-time friction to reduce forensic cost later.
+- **Non-goals:** refusal to ship “magic autonomy” without controls.
+- **Integration realism:** CI gates and artifact retention as part of delivery.
 
 See:
+- `docs/04_ARCHITECTURE_AND_INNOVATION.md`
+- `docs/05_THREAT_MODEL.md`
+- `docs/07_INTEGRATION_PATTERNS.md`
 
-docs/04_ARCHITECTURE_AND_INNOVATION.md
+---
 
-docs/05_THREAT_MODEL.md
-
-docs/07_INTEGRATION_PATTERNS.md
-
-How to evaluate (fast)
+## How to evaluate (fast)
 
 Start here:
+1) `docs/01_HIRING_MANAGER_TLDR.md` (≈ 90 seconds)
+2) `docs/02_15MIN_EVAL_PLAYBOOK.md` (exact route)
+3) `docs/08_EVIDENCE_PACK.md` (clickable proof)
 
-docs/01_HIRING_MANAGER_TLDR.md (≈ 90 seconds)
+If you only click one thing:  
+**Open `docs/08_EVIDENCE_PACK.md` and follow the pointers to real artifacts.**
 
-docs/02_15MIN_EVAL_PLAYBOOK.md (exact route)
+---
 
-docs/08_EVIDENCE_PACK.md (clickable proof)
+## Role fit (explicit)
 
-If you only click one thing:
-
-Open docs/08_EVIDENCE_PACK.md and follow the pointers to real artifacts.
-
-Role fit (explicit)
-
-AI Governance Architect
-
-Responsible AI Architect
-
-AI Risk Management / Model Risk AI
-
-LLM / Agentic Systems Architect
-
-Staff / Principal Platform Engineer (AI control-plane)
+- AI Governance Architect  
+- Responsible AI Architect  
+- AI Risk Management / Model Risk AI  
+- LLM / Agentic Systems Architect  
+- Staff / Principal Platform Engineer (AI control-plane)
 
 See:
+- `docs/03_SYSTEMS_MAP.md`
+- `docs/04_ARCHITECTURE_AND_INNOVATION.md`
 
-docs/03_SYSTEMS_MAP.md
+---
 
-docs/04_ARCHITECTURE_AND_INNOVATION.md
+## Non-goals (to prevent tool sprawl)
 
-Non-goals (to prevent tool-sprawl)
+- This portfolio is not a full MLOps suite.
+- DevTracker is not a project management replacement.
+- ADL is not a workflow engine; it is an admissibility layer.
+- Observability alone is not governance.
 
-This portfolio is not a full MLOps suite.
+---
 
-DevTracker is not a project management replacement.
+## How to use this in an interview
 
-ADL is not a workflow engine; it is an admissibility layer.
+Ask:
+- What change would you block, and why?
+- Where does the decision live, and who owns it over time?
+- What evidence would you want two weeks after an incident?
 
-Observability alone is not governance.
+This repository exists so those questions have **inspectable, non-hand-wavy answers**.

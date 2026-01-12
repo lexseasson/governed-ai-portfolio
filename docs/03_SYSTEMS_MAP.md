@@ -1,4 +1,3 @@
-
 # Systems Map — Architecture & Responsibility
 
 ## One-line summary
@@ -13,7 +12,6 @@ It is a map of **responsibility escalation**, not feature accumulation.
 
 ```mermaid
 flowchart LR
-  flowchart LR
   Econ["Economics + Risk + Econometrics"]
   ML["Applied ML"]
   CS["Crypto Signals Ensemble"]
@@ -23,10 +21,17 @@ flowchart LR
   Econ --> ML
   ML --> CS
   CS --> DT
-  DT --> ADL  
-  end```
+  DT --> ADL
 
-```mermaid
+Interpretation:
+Each step introduces a new constraint:
+economics → incentives,
+ML → drift,
+crypto → real cost of error,
+governance → responsibility over time,
+ADL → admissibility before action.
+
+## Diagram 2 — Control plane vs execution plane
 flowchart TB
   subgraph Execution["Execution plane (can be stochastic)"]
     X1["Agents / Pipelines / Models"]
@@ -41,9 +46,12 @@ flowchart TB
   X1 --> C3
   C2 --> C1
   C1 --> X1
-  end```
 
-```mermaid
+Key point:
+Autonomy belongs in execution.
+Responsibility belongs in the control plane.
+
+## Diagram 3 — Repository responsibility split
 flowchart LR
   subgraph Repo1["Crypto Signals Ensemble"]
     R1a["Signal extraction"]
@@ -57,7 +65,7 @@ flowchart LR
     R2c["Machine snapshots"]
   end
 
-  subgraph Repo3["ADL"]
+  subgraph Repo3["Agentic Decision Ledger (ADL)"]
     R3a["Decision contracts"]
     R3b["Admissibility checks"]
     R3c["CI gates"]
@@ -65,4 +73,15 @@ flowchart LR
 
   Repo1 --> Repo2 --> Repo3
 
-  end```
+
+Interpretation:
+Signals inform change.
+Change requires evidence.
+Decisions require admissibility.
+
+Why this matters
+
+Most agentic failures are not model failures.
+They are organizational memory failures.
+
+This map makes responsibility explicit, inspectable, and enforceable.
