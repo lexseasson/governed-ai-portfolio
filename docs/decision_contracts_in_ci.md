@@ -96,6 +96,7 @@ If a change requires a decision and no valid contract exists, the merge is block
 This gate runs at commit/PR time.
 Runtime can remain stochastic; governance cannot.
 
+```mermaid 
 Fail-closed vs fail-open (explicit trade-off):
 
 | Context            | Strategy         | Rationale                                         |
@@ -104,6 +105,7 @@ Fail-closed vs fail-open (explicit trade-off):
 | Regulated systems  | Fail-closed      | Auditability > velocity                           |
 | Research / sandbox | Fail-open (warn) | Exploration allowed, but evidence still generated |
 | Prototyping        | Fail-open (warn) | Learning phase, not decision phase                |
+```
 
 
 Rule of thumb:
@@ -136,11 +138,11 @@ Open Notepad
 
 notepad ci\check_admissibility.py
 
-
 Paste the script below and save.
 
 ci/check_admissibility.py (minimal gate):
 
+```yaml
 import sys
 from datetime import datetime, timezone
 
@@ -223,8 +225,10 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+```
 
-Run the demo (CMD):
+Run the demo (CMD): 
+
 1) Install the only dependency:
 python -m pip install pyyaml
 
@@ -241,7 +245,6 @@ Expected output:
 Edit the contract and set
 
 expires_at: "2000-01-01"
-
 
 Re-run the gate. It should fail with
 
