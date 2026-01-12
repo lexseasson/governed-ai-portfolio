@@ -22,7 +22,7 @@ flowchart LR
   ML --> CS
   CS --> DT
   DT --> ADL
-
+end```
 Interpretation:
 Each step introduces a new constraint:
 economics → incentives,
@@ -46,7 +46,7 @@ flowchart TB
   X1 --> C3
   C2 --> C1
   C1 --> X1
-
+end 
 Key point:
 Autonomy belongs in execution.
 Responsibility belongs in the control plane.
