@@ -1,9 +1,4 @@
 
----
-
-## 📄 ARCHIVO 2 — `docs/03_SYSTEMS_MAP.md` (PEGAR ENTERO)
-
-```md
 # Systems Map — Architecture & Responsibility
 
 ## One-line summary
@@ -61,3 +56,4 @@ flowchart LR
   end
 
   Repo1 --> Repo2 --> Repo3
+
