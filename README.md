@@ -14,7 +14,10 @@
 - A landing page for Staff / Principal / Architect hiring loops.
 - A set of **falsifiable claims** backed by inspectable artifacts.
 - A fast path to evaluate real-world governance and model-risk thinking.
-- Hiring examples (3 governed change capsules): `docs/10_HIRING_EXAMPLES.md`
+- **Hiring capsules (3 governed change scenarios)**  
+  Concrete, inspectable examples of admission control, bounded authority, and governance evolution:  
+  → `docs/10_HIRING_EXAMPLES.md`
+
 
 
 **This portfolio is not:**
@@ -82,6 +85,21 @@ Agentic systems fail when:
 
 ---
 
+## What survives incidents (and why this exists)
+
+Most systems optimize for *shipping*.  
+This portfolio optimizes for what happens **two weeks after something breaks**.
+
+It shows:
+- how decisions remain attributable after turnover,
+- how evidence stays verifiable after context is lost,
+- how governance scales without relying on “the person who remembers”.
+
+This is not about preventing all failures —  
+it is about making failures *defensible, reconstructible, and learnable*.
+
+---
+
 ## What is actually senior here (signals that matter)
 
 This portfolio is optimized for concerns that appear in Staff / Principal / Architect loops:
@@ -115,11 +133,19 @@ If you only click one thing:
 
 ## Role fit (explicit)
 
-- AI Governance Architect  
-- Responsible AI Architect  
-- AI Risk Management / Model Risk AI  
-- LLM / Agentic Systems Architect  
+This portfolio is relevant if you care about:
+
+- admission control over change, not just execution,
+- AI systems that must survive audit, turnover, and time,
+- governance that produces evidence, not ceremonies.
+
+Typical titles:
+- AI Governance Architect
+- Responsible AI Architect
+- AI / Model Risk Architect
+- Agentic Systems Architect
 - Staff / Principal Platform Engineer (AI control-plane)
+
 
 See:
 - `docs/03_SYSTEMS_MAP.md`
@@ -143,4 +169,8 @@ Ask:
 - Where does the decision live, and who owns it over time?
 - What evidence would you want two weeks after an incident?
 
-This repository exists so those questions have **inspectable, non-hand-wavy answers**.
+This repository exists so those questions have
+**inspectable, deterministic, non-hand-wavy answers**.
+
+If those answers matter in your organization,
+this work is relevant.
