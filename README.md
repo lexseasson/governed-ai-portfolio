@@ -14,6 +14,8 @@
 - A landing page for Staff / Principal / Architect hiring loops.
 - A set of **falsifiable claims** backed by inspectable artifacts.
 - A fast path to evaluate real-world governance and model-risk thinking.
+- Hiring examples (3 governed change capsules): `docs/10_HIRING_EXAMPLES.md`
+
 
 **This portfolio is not:**
 - a SaaS pitch,

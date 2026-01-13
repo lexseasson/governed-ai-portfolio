@@ -50,3 +50,13 @@ Where to click (target structure):
 
 If something is missing today:
 - see `09_ADL_BOOM_CHECKLIST.md` — this is the exact closure plan.
+
+## Governed Change Capsules (fast evidence)
+
+If you want a fast, architecture-grade evaluation route, read:
+- `docs/10_HIRING_EXAMPLES.md`
+
+These capsules are designed to show:
+- posture separation (install vs product vs governance evolution),
+- deterministic routing and admissibility thinking,
+- how audit-grade artifacts become organizational memory.
