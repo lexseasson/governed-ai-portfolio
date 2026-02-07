@@ -76,7 +76,6 @@ flowchart LR
   end
 ```
 
-
 ## The hook (what breaks in real organizations)
 
 Agentic systems fail when:
