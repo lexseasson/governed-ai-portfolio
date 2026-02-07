@@ -60,6 +60,7 @@ Why this matters:
 ## Systems map (high-level)
 
 ```mermaid
+
 flowchart LR
   A["Crypto Signals Ensemble<br/>Signal + Risk Metrics + Reproducibility"]
   B["DevTracker Governance<br/>Evidence Boundary + Audit Artifacts"]
@@ -75,7 +76,6 @@ flowchart LR
   end
 ```
 
----
 
 ## The hook (what breaks in real organizations)
 
