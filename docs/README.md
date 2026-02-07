@@ -1,7 +1,6 @@
 
----
-
 ### 2) `docs/README.md` (índice claro)
+
 ```md
 # Portfolio docs index
 
@@ -14,3 +13,4 @@
 7) Integration patterns (CI gates) → `07_INTEGRATION_PATTERNS.md`  
 8) Evidence pack (what to click, what it proves) → `08_EVIDENCE_PACK.md`  
 9) ADL boom checklist (today/tomorrow) → `09_ADL_BOOM_CHECKLIST.md`  
+11) Control Plane Governance (architectural principle) → `11_CONTROL_PLANE_GOVERNANCE.md`

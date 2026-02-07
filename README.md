@@ -11,6 +11,7 @@
 > It is a **coherent professional trajectory** showing how responsibility escalates from signal → change governance → decision admissibility.
 
 **This portfolio is:**
+
 - A landing page for Staff / Principal / Architect hiring loops.
 - A set of **falsifiable claims** backed by inspectable artifacts.
 - A fast path to evaluate real-world governance and model-risk thinking.
@@ -18,9 +19,8 @@
   Concrete, inspectable examples of admission control, bounded authority, and governance evolution:  
   → `docs/10_HIRING_EXAMPLES.md`
 
-
-
 **This portfolio is not:**
+
 - a SaaS pitch,
 - a hype deck,
 - a promise of safe autonomy by default,
@@ -35,6 +35,7 @@ My path is deliberate and cumulative:
 **Economics → Risk management → Econometrics → Applied ML → Crypto decision systems → Change governance → Decision admissibility**
 
 Why this matters:
+
 - Economics and risk force explicit treatment of uncertainty and incentives.
 - Econometrics and ML expose drift, fragility, and overfitting.
 - Crypto decision systems impose real cost of error and reproducibility discipline.
@@ -43,18 +44,19 @@ Why this matters:
 ### Anchor repositories
 
 1) **Crypto Signals Ensemble**  
-Signal extraction, uncertainty management, and risk metrics under real cost of error.  
-https://github.com/lexseasson/crypto_signals_ensemble
+   Signal extraction, uncertainty management, and risk metrics under real cost of error.  
+   https://github.com/lexseasson/crypto_signals_ensemble
 
 2) **DevTracker Governance**  
-Governance as admission control for change; evidence boundary and audit artifacts.  
-https://github.com/lexseasson/devtracker-governance
+   Governance as admission control for change; evidence boundary and audit artifacts.  
+   https://github.com/lexseasson/devtracker-governance
 
 3) **Agentic Decision Ledger (ADL)**  
-Decision contracts and commit-time admissibility (**Decision ≠ Log**).  
-https://github.com/lexseasson/agentic-decision-ledger
+   Decision contracts and commit-time admissibility (**Decision ≠ Log**).  
+   https://github.com/lexseasson/agentic-decision-ledger
 
 ---
+
 ## Systems map (high-level)
 
 ```mermaid
@@ -73,9 +75,12 @@ flowchart LR
   end
 ```
 
+---
+
 ## The hook (what breaks in real organizations)
 
 Agentic systems fail when:
+
 - change ships without admissibility,
 - automation overwrites meaning (semantics),
 - evidence is missing when incidents happen,
@@ -85,12 +90,30 @@ Agentic systems fail when:
 
 ---
 
+## Control Plane Governance (the missing principle)
+
+If you want the **architectural closure** for this portfolio, read:
+
+- **Control Plane Governance** → `docs/11_CONTROL_PLANE_GOVERNANCE.md`
+
+This chapter makes the core claim explicit:
+
+- **Decisions are control primitives** (not logs).
+- Governance is **pre-commit admissibility** (not post-incident reconstruction).
+- Authority is **scoped**; autonomy is **gated**; evidence must **outlive actors**.
+
+It explains *why* DevTracker, Evidence Packs, and ADL exist as a coherent control-plane,
+and how this approach scales across teams, time, and risk.
+
+---
+
 ## What survives incidents (and why this exists)
 
 Most systems optimize for *shipping*.  
 This portfolio optimizes for what happens **two weeks after something breaks**.
 
 It shows:
+
 - how decisions remain attributable after turnover,
 - how evidence stays verifiable after context is lost,
 - how governance scales without relying on “the person who remembers”.
@@ -111,6 +134,7 @@ This portfolio is optimized for concerns that appear in Staff / Principal / Arch
 - **Integration realism:** CI gates and artifact retention as part of delivery.
 
 See:
+
 - `docs/04_ARCHITECTURE_AND_INNOVATION.md`
 - `docs/05_THREAT_MODEL.md`
 - `docs/07_INTEGRATION_PATTERNS.md`
@@ -120,6 +144,7 @@ See:
 ## How to evaluate (fast)
 
 Start here:
+
 1) `docs/01_HIRING_MANAGER_TLDR.md` (≈ 90 seconds)
 2) `docs/02_15MIN_EVAL_PLAYBOOK.md` (exact route)
 3) `docs/08_EVIDENCE_PACK.md` (clickable proof)
@@ -127,7 +152,10 @@ Start here:
 If you only click one thing:  
 **Open `docs/08_EVIDENCE_PACK.md` and follow the pointers to real artifacts.**
 
+Then:
+
 - Decision contracts enforced in CI (demo) → `docs/decision_contracts_in_ci.md`
+- Control-plane principle (closure) → `docs/11_CONTROL_PLANE_GOVERNANCE.md`
 
 ---
 
@@ -140,14 +168,15 @@ This portfolio is relevant if you care about:
 - governance that produces evidence, not ceremonies.
 
 Typical titles:
+
 - AI Governance Architect
 - Responsible AI Architect
 - AI / Model Risk Architect
 - Agentic Systems Architect
 - Staff / Principal Platform Engineer (AI control-plane)
 
-
 See:
+
 - `docs/03_SYSTEMS_MAP.md`
 - `docs/04_ARCHITECTURE_AND_INNOVATION.md`
 
@@ -165,6 +194,7 @@ See:
 ## How to use this in an interview
 
 Ask:
+
 - What change would you block, and why?
 - Where does the decision live, and who owns it over time?
 - What evidence would you want two weeks after an incident?
